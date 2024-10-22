@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mens Wear</title>
+    
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="products.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -12,16 +13,25 @@
 
 <body>
     <header>
-        <div class="hamburger" aria-label="Toggle navigation">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
+        <div class="hamburger" aria-label="Toggle navigation" role="button">
+            <div class="bar" aria-hidden="true"></div>
+            <div class="bar" aria-hidden="true"></div>
+            <div class="bar" aria-hidden="true"></div>
         </div>
         <div class="nav_logo">
-            <img src="images/venia_logo.svg" alt="logo" />
+            <img src="images/venia_logo.svg" alt="Venia logo" />
+        </div>
+        <div class="nav-links" role="navigation" aria-label="Main Menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="mens.html">Women</a></li>
+                <li><a href="mens.html">Men</a></li>
+                <li><a href="mens.html">Electronics</a></li>
+                <li><a href="mens.html">Jewellery</a></li>
+            </ul>
         </div>
         <nav>
-            <ul class="menu">
+            <ul class="menu" role="navigation" aria-label="Main Menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="mens.html">Women</a></li>
                 <li><a href="mens.html">Men</a></li>
@@ -29,7 +39,7 @@
                 <li><a href="mens.html">Jewellery</a></li>
             </ul>
         </nav>
-        <div class="shoppingcart">
+        <div class="shoppingcart" aria-label="Shopping Cart" role="button">
             <i class="fa fa-shopping-bag" aria-hidden="true"></i>
             <span class="cartcount">10</span>
         </div>
