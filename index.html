@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Venia</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="hamburger" aria-label="Toggle navigation">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <div class="nav_logo">
+            <img src="images/venia_logo.svg" alt="logo" />
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="mens.html">Women</a></li>
+                <li><a href="mens.html">Men</a></li>
+                <li><a href="mens.html">Electronics</a></li>
+                <li><a href="mens.html">Jewellery</a></li>
+            </ul>
+        </nav>
+        <div class="shoppingcart">
+            <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+            <span class="cartcount">10</span>
+        </div>
+    </header>
+    <section class="carousel-container">
+        <div class="carousel">
+            <div class="carousel-item">
+                <div class="carousel-content">
+                    <h1>Shop the new <br />Signature Collection</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="carousel-image" style="background-image: url('images/men-women-shopping.jpg')"></div>
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-content">
+                    <h1>
+                        Shop the new <br />
+                        Signature Collection
+                    </h1>
+                    <p>
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris.
+                    </p>
+                </div>
+                <div class="carousel-image" style="background-image: url('images/women-shopping.jpg')"></div>
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-content">
+                    <h1>
+                        Shop the new<br />
+                        Signature Collection
+                    </h1>
+                    <p>
+                        Quis autem vel eum iure reprehenderit qui in ea voluptate velit
+                        esse.
+                    </p>
+                </div>
+                <div class="carousel-image" style="background-image: url('images/electronics-hopping.jpg')"></div>
+            </div>
+        </div>
+        <div class="navigations">
+            <button class="prev" onclick="showPrevImage()">
+                <i class="arrow left"></i>
+            </button>
+            <button class="next" onclick="showNextImage()">
+                <i class="arrow right"></i>
+            </button>
+        </div>
+    </section>
+    <section class="card-container">
+        <a href="mens.html" class="card">
+            <img src="images/card1.jpg" alt="Shop Women" />
+            <div class="card-content">
+                <h3>Shop Women</h3>
+                <p>Lorem ipsum dolor sit amet</p>
+            </div>
+        </a>
+
+        <a href="mens.html" class="card">
+            <img src="images/card2.jpg" alt="Shop Men" />
+            <div class="card-content">
+                <h3>Shop Men</h3>
+                <p>Lorem ipsum dolor sit amet</p>
+            </div>
+        </a>
+
+        <a href="mens.html" class="card">
+            <img src="images/card3.jpg" alt="Jewellery" />
+            <div class="card-content">
+                <h3>Jewellery</h3>
+                <p>Lorem ipsum dolor sit amet</p>
+            </div>
+        </a>
+
+        <a href="mens.html" class="card">
+            <img src="images/card4.jpg" alt="Electronics" />
+            <div class="card-content">
+                <h3>Electronics</h3>
+                <p>Lorem ipsum dolor sit amet</p>
+            </div>
+        </a>
+    </section>
+    <section class="shopnow_section">
+        <div class="contents">
+            <div class="content-item">
+                <h1>Take off in the new Signature Legging</h1>
+                <h5>Lorem Ipsum Dolor Tempor</h5>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor labore dolore magna lorem ipsum dolor sit dolore
+                    magna.
+                </p>
+                <div class="shop_buttons">
+                    <button class="collection">Shop Collection</button>
+                    <button class="shopnow">Shop Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="shop_image">
+            <img src="images/shop_more.jpg" />
+        </div>
+    </section>
+    <section class="adventure_section">
+        <div class="adventure_image">
+            <img src="images/adventure.jpg" />
+        </div>
+        <div class="contents">
+            <div class="content-item">
+                <h1>Conquer your next adventure</h1>
+                <h5>Lorem Ipsum Dolor Tempor</h5>
+                <button class="shopdevice">SHOP DEVICES</button>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Account</h4>
+                <ul>
+                    <li><a href="#">Sign In</a></li>
+                    <li><a href="#">Register</a></li>
+                    <li><a href="#">Order Status</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>About Us</h4>
+                <ul>
+                    <li><a href="#">Our Story</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Help</h4>
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Order Status</a></li>
+                    <li><a href="#">Returns</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod.
+                </p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© Company Name | Address | City, State ZIP</p>
+            <p><a href="#">Terms of Use</a> | <a href="#">Privacy Policy</a></p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
