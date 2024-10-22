@@ -1,0 +1,545 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-style: normal;
+  line-height: 1.2;
+}
+p {
+  font-size: 16px;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  background-color: #fff;
+}
+
+section h1 {
+  font-size: 34px;
+  padding-bottom: 10px;
+}
+section h5 {
+  font-size: 20px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background-color: #1363df;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+.main-container {
+  margin-top: 70px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+}
+
+.nav_logo img {
+  height: 20px;
+}
+.shoppingcart {
+  position: relative;
+}
+
+.shoppingcart img {
+  width: 30px;
+  height: 30px;
+}
+.shoppingcart span {
+  background-color: #000;
+  color: #fff;
+  border-radius: 50%;
+  padding: 3px;
+  font-weight: bold;
+  font-size: 8px;
+  position: absolute;
+  left: auto;
+  right: -10px;
+  display: flex;
+  height: 15px;
+  width: 15px;
+  top: -5px;
+  align-items: center;
+  justify-content: center;
+}
+.innercontent {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.carousel-container {
+  position: relative;
+  width: 100%;
+  margin: auto;
+  margin-top: 70px;
+  overflow: hidden;
+  padding: 0;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel-item {
+  min-width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-color: #f5f5f5;
+}
+
+.carousel-content {
+  width: 50%;
+  padding: 100px;
+}
+.carousel-content h1 {
+  padding-bottom: 15px;
+}
+
+.carousel-image {
+  width: 50%;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.carousel-container button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.7);
+  border: none;
+  font-size: 2em;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+}
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+.card-container {
+  margin-top: -25px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.card-container .card {
+  text-decoration: none;
+  color: #fff;
+  overflow: hidden;
+  width: 100%;
+  height: 270px;
+  transition: transform 0.3s;
+  position: relative;
+}
+
+.card-container .card img {
+  width: 100%;
+  height: 100%;
+}
+
+.card-container .card-content {
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  border-bottom: 3px solid #1363df;
+}
+
+.card-container.card h3 {
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+
+.card-container .card p {
+  font-size: 14px;
+}
+
+.card-container .card:hover {
+  transform: scale(1.05);
+}
+
+section {
+  display: flex;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+}
+.shopnow_section .contents {
+  width: 55%;
+  display: flex;
+  align-items: center;
+}
+.shopnow_section .shop_image {
+  width: 45%;
+}
+.shopnow_section img {
+  max-width: 100%;
+}
+.shop_buttons {
+  display: flex;
+  align-items: center;
+}
+.shop_buttons button {
+  text-transform: uppercase;
+  border-radius: 5px;
+  height: 35px;
+  background: #fff;
+  padding: 5px 20px;
+  width: 200px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.shop_buttons .collection {
+  border: 2px solid #2a65d7;
+  margin-right: 10px;
+}
+.shop_buttons .shopnow {
+  background-color: #1363df;
+  color: #fff;
+  border: none;
+}
+
+.shopnow_section h5 {
+  padding-bottom: 10px;
+}
+.shopnow_section .content {
+  position: relative;
+}
+.shopnow_section .content-item {
+  padding-left: 50px;
+  padding-right: 50px;
+  position: relative;
+}
+.shopnow_section .content-item::after {
+  content: "";
+  position: absolute;
+  bottom: -40px;
+  left: 50px;
+  width: 70px;
+  height: 5px;
+  background-color: #1363df;
+}
+button {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+}
+.shop_buttons {
+  margin-top: 20px;
+}
+.adventure_section img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+.adventure_image {
+  width: 60%;
+  padding: 10px 0;
+  height: 300px;
+}
+.adventure_section .contents {
+  width: 40%;
+  height: 300px;
+  background-color: #1b252c;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.adventure_section .content-item {
+  padding: 0 70px;
+}
+.adventure_section .shopdevice {
+  padding: 10px 25px;
+  margin-top: 25px;
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #eee;
+  padding: 40px 20px;
+  margin-top: 30px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  flex: 1;
+  margin: 10px;
+  min-width: 150px;
+}
+
+.footer-section h4 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin: 5px 0;
+  margin: 5px 0;
+  font-size: 14px;
+  padding-bottom: 10px;
+}
+
+.footer-section ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.footer-section p {
+  max-width: 200px;
+  line-height: 1.5;
+}
+
+.social-icons a {
+  margin-right: 10px;
+  color: #000;
+}
+
+.social-icons {
+  margin-top: 15px;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+}
+.footer-bottom p:first-child {
+  padding-bottom: 10px;
+}
+.footer-bottom a {
+  text-decoration: none;
+  color: #555;
+}
+
+.mens_banner {
+  display: flex;
+  padding: 0;
+  align-items: center;
+  margin-top: 70px;
+  width: 100%;
+}
+.mens_banner .banner_image {
+  width: 70%;
+}
+.mens_banner .banner_image img {
+  width: 100%;
+  height: 295px;
+  padding: 10px 0;
+  object-fit: cover;
+}
+.mens_banner .content-item {
+  background-color: #1b252c;
+  width: 30%;
+  height: 300px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mens_banner .content-item h1 {
+  color: #fff;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background-color: #1363df;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger .bar {
+  height: 3px;
+  width: 25px;
+  background-color: white;
+  margin: 3px 0;
+}
+
+/* Media Queries */
+@media (max-width: 767px) {
+  section {
+    display: block;
+  }
+  .card-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .adventure_image {
+    width: 100%;
+  }
+  .adventure_section .contents {
+    width: 100%;
+  }
+  nav {
+    display: none;
+  }
+  header {
+    height: 70px;
+  }
+  .hamburger {
+    display: flex;
+  }
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  section {
+    width: 90%;
+  }
+  .shopnow_section {
+    display: block;
+  }
+  .shopnow_section .contents {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .shopnow_section .content-item {
+    padding: 0;
+  }
+  .shopnow_section .shop_image {
+    width: 100%;
+  }
+  .shopnow_section .content-item::after {
+    content: "";
+    display: none;
+  }
+  .shopnow_section .shop_image img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+  }
+  .carousel-image {
+    display: none;
+  }
+  .carousel-content {
+    width: 100%;
+    padding: 60px 100px;
+  }
+}
+
+.nav-links {
+  display: none; 
+  flex-direction: column;
+  position: absolute;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  background-color: #1363df;
+  z-index: 1000;
+}
+
+.nav-links.active {
+  display: flex;
+}
+
+.nav-links li {
+  padding: 10px 20px;
+}
+
+@media (max-width: 480px) {
+  section {
+    display: block;
+  }
+  .card-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .adventure_image {
+    width: 100%;
+  }
+  .adventure_section .contents {
+    width: 100%;
+  }
+}

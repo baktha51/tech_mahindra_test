@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mens Wear</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="products.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="hamburger" aria-label="Toggle navigation">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <div class="nav_logo">
+            <img src="images/venia_logo.svg" alt="logo" />
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="mens.html">Women</a></li>
+                <li><a href="mens.html">Men</a></li>
+                <li><a href="mens.html">Electronics</a></li>
+                <li><a href="mens.html">Jewellery</a></li>
+            </ul>
+        </nav>
+        <div class="shoppingcart">
+            <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+            <span class="cartcount">10</span>
+        </div>
+    </header>
+
+    <section class="mens_banner">
+        <div class="content-item">
+            <div>
+                <h1>Men’s <br />Outerwear</h1>
+            </div>
+        </div>
+        <div class="banner_image">
+            <img src="images/mens_wear_banner.jpg" alt="a man stadning with shopping bag" />
+        </div>
+    </section>
+    <section class="all-products">
+        <div class="filters">
+            <ul class="navigation_category">
+                <li><a href="#">Clothing </a> /</li>
+                <li><a href="#">Mens </a> /</li>
+                <li>
+                    <a href="#">Outerwear</a>
+                </li>
+            </ul>
+            <div id="category-filter">
+                <div class="filtertext">
+                    <p>Filters</p>
+                    <p>Categories</p>
+                </div>
+                <div class="label-divider">
+                    <label> <input type="checkbox" value="jewelery" /> Jewellery </label>
+                    <label>
+                        <input type="checkbox" value="electronics" /> Electronics
+                    </label>
+                    <label>
+                        <input type="checkbox" value="men's clothing" /> Men's Clothing
+                    </label>
+                    <label>
+                        <input type="checkbox" value="women's clothing" /> Women's Clothing
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="full-list">
+            <div class="search_sort">
+                <div id="result-count"></div>
+                <div class="divider">
+                    <input type="text" id="search" placeholder="Search products..." />
+                    <select id="sort-options">
+                        <option value="asc">Sort by Price: Low to High</option>
+                        <option value="desc">Sort by Price: High to Low</option>
+                    </select>
+                </div>
+            </div>
+            <div id="placeholder-loader" style="display: none;"></div>
+            <div id="product-list"></div>
+            <button id="load-more" style="display: none;">Load More</button>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Account</h4>
+                <ul>
+                    <li><a href="#">Sign In</a></li>
+                    <li><a href="#">Register</a></li>
+                    <li><a href="#">Order Status</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>About Us</h4>
+                <ul>
+                    <li><a href="#">Our Story</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Help</h4>
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Order Status</a></li>
+                    <li><a href="#">Returns</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod.
+                </p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© Company Name | Address | City, State ZIP</p>
+            <p><a href="#">Terms of Use</a> | <a href="#">Privacy Policy</a></p>
+        </div>
+    </footer>
+    <script src="products.js"></script>
+</body>
+
+</html>
