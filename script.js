@@ -1,5 +1,5 @@
-const carousel = document.querySelector('.carousel');
-const items = document.querySelectorAll('.carousel-item');
+const carousel = document.querySelector('.');
+const items = document.querySelectorAll('.carousel-');
 let currentIndex = 0;
 
 function showImage(index) {
