@@ -230,19 +230,24 @@ section {
   align-items: center;
   margin-top: 20px;
 }
-.shop_buttons button {
+.shop_buttons a {
   text-transform: uppercase;
   border-radius: 5px;
   height: 35px;
   background-color: #fff;
   padding: 5px 20px;
   width: 200px;
+  display: inline-flex;
+  text-decoration: none;
+  font-size: 13px;
+  align-items: center;
+  justify-content: center;
   font-weight: 500;
-  cursor: pointer;
 }
 .shop_buttons .collection {
   border: 2px solid #2a65d7;
   margin-right: 10px;
+  color: #000 !important;
 }
 .shop_buttons .shopnow {
   background-color: #1363df;
@@ -297,12 +302,17 @@ button {
   padding: 0 70px;
 }
 .adventure_section .shopdevice {
-  padding: 10px 25px;
+  padding: 10px 15px;
   margin-top: 25px;
   background: transparent;
   border: 1px solid #fff;
   color: #fff;
-  cursor: pointer;
+  display: inline-block;
+  max-width: 150px;
+  text-decoration: none;
+  font-size: 13px;
+  text-align: center;
+  font-weight: 500;
   border-radius: 5px;
 }
 
