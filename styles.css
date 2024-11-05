@@ -505,6 +505,14 @@ footer {
   .adventure_section .contents {
     width: 100%;
   }
+  .shop_buttons {
+    display: block;
+    text-align: center;
+  }
+  .shop_buttons .collection{
+    margin-bottom: 15px;
+    margin-right: 0 !important;
+  }
 }
 
 .nav-links {
