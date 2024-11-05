@@ -269,7 +269,7 @@ section {
 .shopnow_section .content-item::after {
   content: "";
   position: absolute;
-  bottom: -40px;
+  bottom: -30px;
   left: 50px;
   width: 70px;
   height: 5px;
@@ -481,8 +481,10 @@ footer {
   }
   .shopnow_section .shop_image img {
     width: 100%;
-    height: 350px;
-    object-fit: cover;
+    max-height: 250px;
+  }
+  .adventure_section img{
+    max-height: 250px;
   }
   .carousel-image {
     display: none;
@@ -505,6 +507,16 @@ footer {
 @media (max-width: 480px) {
   section {
     display: block;
+  }
+  .adventure_section{
+    display: flex !important;
+    flex-direction: column-reverse;
+  }
+  .adventure_section .contents{
+    max-height: 250px;
+  }
+  .adventure_section .content-item{
+    padding: 0 30px !important;
   }
   .card-container {
     grid-template-columns: repeat(1, 1fr);
